@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Periodic Table</title>
+	<link rel="stylesheet" href="pt.css">
+	<script src="pt.js"></script>
+		
+	<!--<script>
+			window.onload = function() {
+				var myInput = document.getElementById('myInput');
+				myInput.onpaste = function(e) {
+				e.preventDefault();
+				}
+			}
+			window.onload = function() {
+				var myInput = document.getElementById('myInput');
+				myInput.oncopy = function(e) {
+				e.preventDefault();
+				}
+			}
+	</script>-->
+	
+</head>
+<body id="body">
+	<div id="div">
+		<header id="top_header">
+			<h2><strong>The Periodic Table of Elements</strong></h2>
+		</header>
+		
+		<form name="drop down" id="dropdown">
+			<label>Choose a Different View of the Perodic Table</label><br>
+			<select name="ddmenu" id="ddmenu">
+				<option ></option>
+				<option value="EN.html">Electro-Negativity</option>
+				<option value="AR.html">Atmoic Radius</option>
+			</select>
+			<input type="button" name="Submit" value="  Go!  " onClick="window.open(ddmenu.value, '_parent')">
+		</form><br>
+		
+		<table id="table">
+			<tbody>
+				<!-- line 1 -->
+				<tr>
+					<th class="lbl">1</th>
+					<td class="xs">
+					<a class="symb" href="hydrogen.html">
+						<div class="at_num">1</div>
+							<div class="symbol">
+								<font color="red">
+									<abbr class="sym" title="Hydrogen">H</abbr>
+								</font>
+							</div>
+						<div class="at_wt">1.0079</div>
+					</a>
+					</td>
+					<td colspan="17" id="colspan"></td>
+					<td class="xs">
+					<a class="symb" href="helium.html">
+					<div class="at_num">2</div>
+					<div class="symbol">						
+							<font color="red">
+								<abbr class="sym" title="Helium">He</abbr>
+							</font>
+					</div>
+					<div class="at_wt">4.003</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of line 1 -->
+				<!-- line 2 -->
+				<tr>
+					<th class="lbl">2</th>
+					<td class="xs">
+					<a class="symb" href="lithium.html">
+					<div class="at_num">3</div>
+					<div class="symbol">
+							<abbr class="sym" title="Lithium">Li</abbr>
+					</div>
+					<div class="at_wt">6.941</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="beryllium.html">
+					<div class="at_num">4</div>
+					<div class="symbol">
+							<abbr class="sym" title="Beryllium">Be</abbr>
+					</div>
+					<div class="at_wt">9.012</div>
+					</a>
+					</td>
+					<td colspan="11" id="colspan">Solid at Room Temperature
+					<p style="color: blue">Liquid at Room Temperature</p>
+					<p style="color: red">Gas at Room Temperature</p>
+					</td>
+					
+					
+					<td class="xp">
+					<a class="symb" href="boron.html">
+					<div class="at_num">5</div>
+					<div class="symbol">
+							<abbr class="sym" title="Boron">B</abbr>
+					</div>
+					<div class="at_wt">10.811</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="carbon.html">
+					<div class="at_num">6</div>
+					<div class="symbol">
+							<abbr class="sym" title="Carbon">C</abbr>
+					</div>
+					<div class="at_wt">12.011</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="nitrogen.html">
+					<div class="at_num">7</div>
+					<div class="symbol">
+						<a class="symb" href="nitrogen.html">
+							<font color="red">	
+								<abbr class="sym" title="Nitrogen">N</abbr>
+							</font>
+					</div>
+					<div class="at_wt">14.007</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="oxygen.html">
+					<div class="at_num">8</div>
+					<div class="symbol">
+							<font color="red">
+								<abbr class="sym" title="Oxygen">O</abbr>
+							</font>
+					</div>
+					<div class="at_wt">15.999</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="fluorine.html">
+					<div class="at_num">9</div>
+					<div class="symbol">
+							<font color="red">	
+								<abbr class="sym" title="Fluorine">F</abbr>
+							</font>
+					</div>
+					<div class="at_wt">18.998</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="neon.html">
+					<div class="at_num">10</div>
+					<div class="symbol">						
+							<font color="red">	
+								<abbr class="sym" title="Neon">Ne</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">20.180</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of line 2 -->
+				<!-- line 3 -->
+				<tr>
+					<th class="lbl">3</th>
+					<td class="xs">
+					<a class="symb" href="sodium.html">
+					<div class="at_num">11</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Sodium">Na</abbr>						
+					</div>
+					<div class="at_wt">22.990</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="magnesium.html">
+					<div class="at_num">12</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Magnesium">Mg</abbr>						
+					</div>
+					<div class="at_wt">24.305</div>
+					</a>
+					</td>
+					<td colspan="11" id="colspan"></td>
+					<td class="xp">
+					<a class="symb" href="aluminum.html">
+					<div class="at_num">13</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Aluminum">Al</abbr>						
+					</div>
+					<div class="at_wt">26.982</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="silicon.html">
+					<div class="at_num">14</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Silicon">Si</abbr>						
+					</div>
+					<div class="at_wt">28.086</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="phosphorus.html">
+					<div class="at_num">15</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Phosphorus">P</abbr>						
+					</div>
+					<div class="at_wt">30.974</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="sulfur.html">
+					<div class="at_num">16</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Sulfur">S</abbr>						
+					</div>
+					<div class="at_wt">32.066</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="chlorine.html">
+					<div class="at_num">17</div>
+					<div class="symbol">						
+							<font color="red">	
+								<abbr class="sym" title="Chlorine">Cl</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">35.453</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="argon.html">
+					<div class="at_num">18</div>
+					<div class="symbol">						
+							<font color="red">	
+								<abbr class="sym" title="Argon">Ar</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">39.948</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of line 3 -->
+				<!-- line 4 -->
+				<tr>
+					<th class="lbl">4</th>
+					<td class="xs">
+					<a class="symb" href="potassium.html">
+					<div class="at_num">19</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Potassium">K</abbr>						
+					</div>
+					<div class="at_wt">39.098</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="calcium.html">
+					<div class="at_num">20</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Calcium">Ca</abbr>						
+					</div>
+					<div class="at_wt">40.08</div>
+					</a>
+					</td>
+					<td></td>
+					
+					<td class="xd">
+					<a class="symb" href="scandium.html">
+					<div class="at_num">21</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Scandium">Sc</abbr>						
+					</div>
+					<div class="at_wt">44.956</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="titanium.html">
+					<div class="at_num">22</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Titanium">Ti</abbr>						
+					</div>
+					<div class="at_wt">47.88</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="vanadium.html">
+					<div class="at_num">23</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Vanadium">V</abbr>						
+					</div>
+					<div class="at_wt">50.942</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="chromium.html">
+					<div class="at_num">24</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Chromium">Cr</abbr>						
+					</div>
+					<div class="at_wt">51.996</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="manganese.html">
+					<div class="at_num">25</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Manganese">Mn</abbr>						
+					</div>
+					<div class="at_wt">54.938</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="iron.html">
+					<div class="at_num">26</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Iron">Fe</abbr>						
+					</div>
+					<div class="at_wt">55.847</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="cobalt.html">
+					<div class="at_num">27</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Cobalt">Co</abbr>						
+					</div>
+					<div class="at_wt">58.933</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="nickel.html">
+					<div class="at_num">28</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Nickel">Ni</abbr>						
+					</div>
+					<div class="at_wt">58.69</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="copper.html">
+					<div class="at_num">29</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Copper">Cu</abbr>						
+					</div>
+					<div class="at_wt">63.546</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="zinc.html">
+					<div class="at_num">30</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Zinc">Zn</abbr>						
+					</div>
+					<div class="at_wt">65.39</div>
+					</a>
+					</td>
+					
+					<td class="xp">
+					<a class="symb" href="gallium.html">
+					<div class="at_num">31</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Gallium">Ga</abbr>						
+					</div>
+					<div class="at_wt">69.723</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="germanium.html">
+					<div class="at_num">32</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Germanium">Ge</abbr>						
+					</div>
+					<div class="at_wt">72.61</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="arsenic.html">
+					<div class="at_num">33</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Arsenic">As</abbr>						
+					</div>
+					<div class="at_wt">74.922</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="selenium.html">
+					<div class="at_num">34</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Selenium">Se</abbr>						
+					</div>
+					<div class="at_wt">78.96</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="bromine.html">
+					<div class="at_num">35</div>
+					<div class="symbol">						
+							<font color="blue">
+								<abbr class="sym" title="Bromine">Br</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">79.904</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="krypton.html">
+					<div class="at_num">36</div>
+					<div class="symbol">						
+							<font color="red">
+								<abbr class="sym" title="Krypton">Kr</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">83.80</div>
+					</a>
+					</td>
+				</tr>
+					<!-- end of line 4 -->
+					<!-- line 5 -->
+				<tr>
+					<th class="lbl">5</th>
+					<td class="xs">
+					<a class="symb" href="rubidium.html">
+					<div class="at_num">37</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Rubidium">Rb</abbr>						
+					</div>
+					<div class="at_wt">85.47</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="strontium.html">
+					<div class="at_num">38</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Strontium">Sr</abbr>						
+					</div>
+					<div class="at_wt">87.62</div>
+					</a>
+					</td>
+					<td></td>
+					
+					<td class="xd">
+					<a class="symb" href="yttrium.html">
+					<div class="at_num">39</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Yttrium">Y</abbr>						
+					</div>
+					<div class="at_wt">88.906</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="zirconium.html">
+					<div class="at_num">40</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Zirconium">Zr</abbr>						
+					</div>
+					<div class="at_wt">91.224</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="niobium.html">
+					<div class="at_num">41</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Niobium">Nb</abbr>						
+					</div>
+					<div class="at_wt">92.906</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="molybdenum.html">
+					<div class="at_num">42</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Molybdenum">Mo</abbr>						
+					</div>
+					<div class="at_wt">95.94</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="technetium.html">
+					<div class="at_num">43</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Technitium">Tc</abbr>						
+					</div>
+					<div class="at_wt">(98)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="ruthenium.html">
+					<div class="at_num">44</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ruthenium">Ru</abbr>						
+					</div>
+					<div class="at_wt">101.07</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="rhodium.html">
+					<div class="at_num">45</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Rhodium">Rh</abbr>						
+					</div>
+					<div class="at_wt">102.91</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="palladium.html">
+					<div class="at_num">46</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Palladium">Pd</abbr>						
+					</div>
+					<div class="at_wt">106.42</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="silver.html">
+					<div class="at_num">47</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Silver">Ag</abbr>						
+					</div>
+					<div class="at_wt">107.87</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="cadmium.html">
+					<div class="at_num">48</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Cadmium">Cd</abbr>						
+					</div>
+					<div class="at_wt">112.41</div>
+					</a>
+					</td>
+					
+					<td class="xp">
+					<a class="symb" href="indium.html">
+					<div class="at_num">49</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Indium">In</abbr>						
+					</div>
+					<div class="at_wt">114.82</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="tin.html">
+					<div class="at_num">50</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Tin">Sn</abbr>						
+					</div>
+					<div class="at_wt">118.71</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="antimony.html">
+					<div class="at_num">51</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Antimony">Sb</abbr>						
+					</div>
+					<div class="at_wt">121.75</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="tellurium.html">
+					<div class="at_num">52</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Tellurium">Te</abbr>						
+					</div>
+					<div class="at_wt">127.60</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="iodine.html">
+					<div class="at_num">53</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Iodine">I</abbr>						
+					</div>
+					<div class="at_wt">126.90</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="xenon.html">
+					<div class="at_num">54</div>
+					<div class="symbol">						
+							<font color="red">	
+								<abbr class="sym" title="Xenon">Xe</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">131.29</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of line 5 -->
+				<!-- line 6 -->
+				<tr>
+					<th class="lbl">6</th>
+					<td class="xs">
+					<a class="symb" href="cesium.html">
+					<div class="at_num">55</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Cesium">Cs</abbr>						
+					</div>
+					<div class="at_wt">132.90</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="barium.html">
+					<div class="at_num">56</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Barium">Ba</abbr>						
+					</div>
+					<div class="at_wt">137.33</div>
+					</a>
+					</td>
+					<td>
+						<abbr class="sym" title="Lanthanides" onMouseOver="this.style.color='grey'">*</abbr>
+					</td>
+					
+					<td class="xd">
+					<a class="symb" href="lanthanium.html">
+					<div class="at_num">57</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Lanthanium">La</abbr>						
+					</div>
+					<div class="at_wt">138.91</div>
+					</a>
+					</td>					
+					<td class="xd">
+					<a class="symb" href="hafnium.html">
+					<div class="at_num">72</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Hafnium">Hf</abbr>						
+					</div>
+					<div class="at_wt">178.49</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="tantalum.html">
+					<div class="at_num">73</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Tantalum">Ta</abbr>						
+					</div>
+					<div class="at_wt">180.95</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="tungsten.html">
+					<div class="at_num">74</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Tungsten">W</abbr>						
+					</div>
+					<div class="at_wt">183.85</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="rhenium.html">
+					<div class="at_num">75</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Rhenium">Re</abbr>						
+					</div>
+					<div class="at_wt">186.21</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="osmium.html">
+					<div class="at_num">76</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Osmium">Os</abbr>						
+					</div>
+					<div class="at_wt">190.2</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="iridium.html">
+					<div class="at_num">77</div>
+					<div class="symbol">					
+							<abbr class="sym" title="Iridium">Ir</abbr>						
+					</div>
+					<div class="at_wt">192.22</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="platinum.html">
+					<div class="at_num">78</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Platinum">Pt</abbr>						
+					</div>
+					<div class="at_wt">195.08</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="gold.html">
+					<div class="at_num">79</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Gold">Au</abbr>						
+					</div>
+					<div class="at_wt">196.97</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="mercury.html">
+					<div class="at_num">80</div>
+					<div class="symbol">						
+							<font color="blue">
+								<abbr class="sym" title="Mercury">Hg</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">200.59</div>
+					</a>
+					</td>
+					
+					<td class="xp">
+					<a class="symb" href="thallium.html">
+					<div class="at_num">81</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Thallium">Tl</abbr>						
+					</div>
+					<div class="at_wt">204.38</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="lead.html">
+					<div class="at_num">82</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Lead">Pb</abbr>						
+					</div>
+					<div class="at_wt">207.2</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="bismuth.html">
+					<div class="at_num">83</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Bismuth">Bi</abbr>						
+					</div>
+					<div class="at_wt">208.98</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="polonium.html">
+					<div class="at_num">84</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Polonium">Po</abbr>						
+					</div>
+					<div class="at_wt">(209)</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="astatine.html">
+					<div class="at_num">85</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Astatine">At</abbr>						
+					</div>
+					<div class="at_wt">(210)</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="radon.html">
+					<div class="at_num">86</div>
+					<div class="symbol">						
+							<font color="red">	
+								<abbr class="sym" title="Radon">Rn</abbr>
+							</font>						
+					</div>
+					<div class="at_wt">(222)</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of line 6 -->
+				<!-- line 7 -->
+				<tr>
+					<th class="lbl">7</th>
+					<td class="xs">
+					<a class="symb" href="francium.html">
+					<div class="at_num">87</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Francium">Fr</abbr>						
+					</div>
+					<div class="at_wt">223.019</div>
+					</a>
+					</td>
+					<td class="xs">
+					<a class="symb" href="radium.html">
+					<div class="at_num">88</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Radium">Ra</abbr>						
+					</div>
+					<div class="at_wt">226.025</div>
+					</a>
+					</td>
+					<td>
+						<abbr class="sym" title="Actinides" onMouseOver="this.style.color='grey'">**</abbr>
+					</td>
+					
+					<td class="xd">
+					<a class="symb" href="actinium.html">
+					<div class="at_num">89</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Actinium">Ac</abbr>						
+					</div>
+					<div class="at_wt">227.027</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="rutherfordium.html">
+					<div class="at_num">104</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Rutherfordium">Rf</abbr>						
+					</div>
+					<div class="at_wt">(261)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="dubnium.html">
+					<div class="at_num">105</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Dubnium">Db</abbr>						
+					</div>
+					<div class="at_wt">(262)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="seaborgium.html">
+					<div class="at_num">106</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Seaborgium">Sg</abbr>
+					</div>
+					<div class="at_wt">(263)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="bohrium.html">
+					<div class="at_num">107</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Bohrium">Bh</abbr>						
+					</div>
+					<div class="at_wt">(262)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="hassium.html">
+					<div class="at_num">108</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Hassium">Hs</abbr>						
+					</div>
+					<div class="at_wt">(265)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="meitnerium.html">
+					<div class="at_num">109</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Meitnerium">Mt</abbr>						
+					</div>
+					<div class="at_wt">(266)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="darmstadtium.html">
+					<div class="at_num">110</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Darmstadtium">Ds</abbr>						
+					</div>
+					<div class="at_wt">(271)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="roentgenium.html">
+					<div class="at_num">111</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Roentgenium">Rg</abbr>						
+					</div>
+					<div class="at_wt">(272)</div>
+					</a>
+					</td>
+					<td class="xd">
+					<a class="symb" href="copernicium.html">
+					<div class="at_num">112</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Copernicium">Cn</abbr>						
+					</div>
+					<div class="at_wt">(277)</div>
+					</a>
+					</td>
+					
+					<td class="xp">
+					<a class="symb" href="Ununtrium.html">
+					<div class="at_num">113</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununtrium">Uut</abbr>						
+					</div>
+					<div class="at_wt">286</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="Ununquadium.html">
+					<div class="at_num">114</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununquadium">Uuq</abbr>						
+					</div>
+					<div class="at_wt">289</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="Ununpentium.html">
+					<div class="at_num">115</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununpentium">Uup</abbr>						
+					</div>
+					<div class="at_wt">289</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="Ununhexium.html">
+					<div class="at_num">116</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununhexium">Uuh</abbr>						
+					</div>
+					<div class="at_wt">293</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="Ununseptium.html">
+					<div class="at_num">117</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununseptium">Uus</abbr>						
+					</div>
+					<div class="at_wt">294</div>
+					</a>
+					</td>
+					<td class="xp">
+					<a class="symb" href="Ununoctium.html">
+					<div class="at_num">118</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ununoctium">Uuo</abbr>						
+					</div>
+					<div class="at_wt">294</div>
+					</a>
+					</td>
+				</tr>
+				<tr>
+					<td id="colspan">&nbsp;</td>
+					<td colspan="17" id="colspan"></td>
+				</tr>
+				<!-- end of line 7 -->
+				<!-- lanthanides -->
+				<tr>
+					<th class="lbl">Lanthanides</th>
+					<td>*</td>
+					<td class="xf">
+					<a class="symb" href="Cerium.html">
+					<div class="at_num">58</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Cerium">Ce</abbr>						
+					</div>
+					<div class="at_wt">140.12</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Praseodymium.html">
+					<div class="at_num">59</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Praseodymium">Pr</abbr>						
+					</div>
+					<div class="at_wt">140.91</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Neodymium.html">
+					<div class="at_num">60</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Neodymium">Nd</abbr>						
+					</div>
+					<div class="at_wt">144.24</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Promethium.html">
+					<div class="at_num">61</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Promethium">Pm</abbr>						
+					</div>
+					<div class="at_wt">(145)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Samarium.html">
+					<div class="at_num">62</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Samarium">Sm</abbr>						
+					</div>
+					<div class="at_wt">150.36</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Europium.html">
+					<div class="at_num">63</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Europium">Eu</abbr>						
+					</div>
+					<div class="at_wt">151.96</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Gadolinium.html">
+					<div class="at_num">64</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Gadolinium">Gd</abbr>						
+					</div>
+					<div class="at_wt">157.25</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Terbium.html">
+					<div class="at_num">65</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Terbium">Tb</abbr>						
+					</div>
+					<div class="at_wt">158.92</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Dysprosium.html">
+					<div class="at_num">66</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Dysprosium">Dy</abbr>						
+					</div>
+					<div class="at_wt">162.50</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Holmium.html">
+					<div class="at_num">67</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Holmium">Ho</abbr>						
+					</div>
+					<div class="at_wt">164.93</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Erbium.html">
+					<div class="at_num">68</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Erbium">Er</abbr>						
+					</div>
+					<div class="at_wt">167.26</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Thulium.html">
+					<div class="at_num">69</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Thulium">Tm</abbr>						
+					</div>
+					<div class="at_wt">168.93</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Ytterbium.html">
+					<div class="at_num">70</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Ytterbium">Yb</abbr>						
+					</div>
+					<div class="at_wt">173.04</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Lutetium.html">
+					<div class="at_num">71</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Lutetium">Lu</abbr>						
+					</div>
+					<div class="at_wt">174.97</div>
+					</a>
+					</td>
+					
+					<td colspan="1" rowspan="2"></td>
+					<td colspan="2" rowspan="2" id="box1">
+					<p><strong>KEY</strong>
+					<div class="ex"></div><p>= s-block</p>
+					<div class="ex1"></div><p>= d-block</p>
+					<div class="ex2"></div><p>= p-block</p>
+					<div class="ex3"></div><p>= f-block</p>
+					</p>
+					</td>
+					
+				</tr>
+				<!-- end of Lanthanides -->
+				<!-- Actinides -->
+				<tr>
+					<th class="lbl">Actinides</th>
+					<td>**</td>
+					<td class="xf">
+					<a class="symb" href="Thorium.html">
+					<div class="at_num">90</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Thorium">Th</abbr>						
+					</div>
+					<div class="at_wt">232.04</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Protactinim.html">
+					<div class="at_num">91</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Protactinim">Pa</abbr>						
+					</div>
+					<div class="at_wt">231.04</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Uranium.html">
+					<div class="at_num">92</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Uranium">U</abbr>
+					</div>
+					<div class="at_wt">238.03</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Neptunium.html">
+					<div class="at_num">93</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Neptunium">Np</abbr>						
+					</div>
+					<div class="at_wt">(237.05)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Plutonium.html">
+					<div class="at_num">94</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Plutonium">Pu</abbr>						
+					</div>
+					<div class="at_wt">(244)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Americium.html">
+					<div class="at_num">95</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Americium">Am</abbr>						
+					</div>
+					<div class="at_wt">(243)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Curium.html">
+					<div class="at_num">96</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Curium">Cm</abbr>						
+					</div>
+					<div class="at_wt">(247)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Berkelium.html">
+					<div class="at_num">97</div>
+					<div class="symbol">						
+							<abbr class="sym" title="Berkelium">Bk</abbr>						
+					</div>
+					<div class="at_wt">(247)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Californium.html">
+					<div class="at_num">98</div>
+					<div class="symbol">
+							<abbr class="sym" title="Californium">Cf</abbr>
+					</div>
+					<div class="at_wt">(251)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Einsteinium.html">
+					<div class="at_num">99</div>
+					<div class="symbol">
+							<abbr class="sym" title="Einsteinium">Es</abbr>
+					</div>
+					<div class="at_wt">(254)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Fermium.html">
+					<div class="at_num">100</div>
+					<div class="symbol">
+							<abbr class="sym" title="Fermium">Fm</abbr>
+					</div>
+					<div class="at_wt">(257)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Mendelevium.html">
+					<div class="at_num">101</div>
+					<div class="symbol">
+							<abbr class="sym" title="Mendelevium">Md</abbr>
+					</div>
+					<div class="at_wt">(258)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Nobelium.html">
+					<div class="at_num">102</div>
+					<div class="symbol">
+							<abbr class="sym" title="Nobelium">No</abbr>
+					</div>
+					<div class="at_wt">(259)</div>
+					</a>
+					</td>
+					<td class="xf">
+					<a class="symb" href="Lawrencium.html">
+					<div class="at_num">103</div>
+					<div class="symbol">
+							<abbr class="sym" title="Lawrencium">Lr</abbr>
+					</div>
+					<div class="at_wt">(260)</div>
+					</a>
+					</td>
+				</tr>
+				<!-- end of Actinides -->
+			</tbody>
+		</table><br><br>
+		
+		<!--<textarea id="textarea" cols="28" rows="15" placeholder="Feel Free to Leave a Comment!" align="left"></textarea>-->
+		
+		<!--<a class="ios-6-arrow left blue" href="" onclick="history.go(-1)" data-title="back"></a>-->
+	</div>
+
+	
+	<!--<section id="leftbox">
+		
+	</section>
+	<section id="rightbox">
+		
+		<img src="http://stevens.usc.edu/images/upload/FormalSeal_Word_RegUse_GoldOnCard.jpg" id="usc" height="200px" width="200px">
+	</section>-->
+
+</body>
+</html>
